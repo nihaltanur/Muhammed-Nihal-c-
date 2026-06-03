@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammed Nihal C | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.profile{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    background:#1e293b;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:3rem;
+}
+
+.highlight{
+    color:#38bdf8;
+}
+
+.subtitle{
+    margin-top:10px;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+section{
+    padding:60px 10%;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    margin-top:20px;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.skill{
+    background:#334155;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    margin-top:30px;
+}
+
+#clock{
+    font-size:1.2rem;
+    margin-top:15px;
+    color:#38bdf8;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="profile">⚡</div>
+
+    <h1>Muhammed <span class="highlight">Nihal C</span></h1>
+
+    <p class="subtitle">
+        Diploma Student in Electrical & Electronics Engineering (EEE)
+    </p>
+
+    <p class="subtitle">
+        Technology Enthusiast | Electrical Wiring | Future Entrepreneur
+    </p>
+
+    <div id="clock"></div>
+
+    <a href="#about" class="btn">Explore Portfolio</a>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="card">
+        <p>
+            I am Muhammed Nihal C from Tanur, Kerala.
+            Currently studying Diploma in Electrical and Electronics
+            Engineering (EEE). I am passionate about technology,
+            electrical wiring, innovation and business.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Skills</h2>
+
+    <div class="skills">
+        <div class="skill">⚡ Electrical Wiring</div>
+        <div class="skill">🔌 Electrical Maintenance</div>
+        <div class="skill">💻 Technology</div>
+        <div class="skill">🌐 Web Development</div>
+        <div class="skill">📈 Business Mindset</div>
+        <div class="skill">🔧 Problem Solving</div>
+    </div>
+</section>
+
+<section>
+    <h2>Career Goal</h2>
+
+    <div class="card">
+        <p>
+            My goal is to build a successful career in the electrical
+            industry, gain practical experience, learn modern technologies,
+            and eventually start my own electrical and technology business.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Education</h2>
+
+    <div class="card">
+        <p>Plus Two - Biology Science</p>
+        <p>Diploma in Electrical & Electronics Engineering (EEE)</p>
+        <p>Currently: 2nd Year Student</p>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+
+    <div class="card">
+        <p>📍 Tanur, Kerala, India</p>
+        <p>📧 your-email@example.com</p>
+        <p>📱 Your Phone Number</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Muhammed Nihal C | Portfolio Website</p>
+</footer>
+
+<script>
+function updateClock() {
+    const now = new Date();
+    document.getElementById("clock").innerHTML =
+        "Current Time: " + now.toLocaleTimeString();
+}
+setInterval(updateClock,1000);
+updateClock();
+</script>
+
+</body>
+</html>
